@@ -1,5 +1,5 @@
 # PepperGPSR
-This is a base repository for the research titled "Enhancing Autonomous Task Execution in Social Robots with Large Language Models". It was developed for the task generation and evaluation of the research.
+This is a base repository for the research titled "Enhancing Autonomous Task Execution in Social Robots with Large Language Models". It was developed for the task generation and evaluation steps of the research.
 
 ## Installation
 This repository uses Python 3.11.0. To install the required packages, run the following command:
