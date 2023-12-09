@@ -58,6 +58,7 @@ class Task_module:
         objects: ["spam"(carne enlatada), "cleanser", "sugar", "jello"(gelatina roja), "mug", "tuna", "bowl", "tomato_soup", "footwear", "banana", "mustard", "coffee_grounds", "cheezit"]
         fruits: ["apple", "lemon", "orange", "peach", "pear", "plum","strawberry"]
         """
+        return True
 
     ################### SPEECH SERVICES ###################
 
@@ -86,7 +87,7 @@ class Task_module:
         ----------
         Allows the robot to save audio and saves it to a file.
         """
-        return "prueba"
+        return "output test"
 
     def q_a_speech(self, tag:str)->str:
         """
@@ -100,7 +101,7 @@ class Task_module:
         if tag =="age":
             return "1"
         else:
-            return "prueba"
+            return "output test"
         
     def answer_question(self,question:str)->str:
         """
@@ -111,7 +112,7 @@ class Task_module:
         """
         if question == "" or question is None:
             raise exceptions.EmptyQuestionException(f"Question recieved is empty")
-        return "respuesta de prueba"
+        return "output test answer"
 
     ################### NAVIGATION SERVICES ###################
 
@@ -136,6 +137,7 @@ class Task_module:
         ----------
         Stops the robot
         """
+        return True
 
     def spin_srv(self, degrees:float):
         """
@@ -165,6 +167,7 @@ class Task_module:
         Follows the person in front of the robot until the person touches the head of the robot,
         the service finishes by its own
         """
+        return True
 
     def add_place(self,name:str,persist=0,edges=[])->bool:
         """
