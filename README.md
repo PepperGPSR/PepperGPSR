@@ -79,13 +79,13 @@ If the previous step indicates that the robot does have the capabilities to carr
 ## Long String Prompting
 
 This approach uses only one prompt to accomplish the task, the content of this prompt goes as follows:
-– The goal of the model: This includes the specification of the main purpose of the model and the role it performs in the whole robot architecture.
-– The available functions from the task module: These functions belong to the codebase interface and call services from the Robot, the syntax of the functions, the parameters, and outputs were included in this section.
-– The available defined entities and tags: This is important because many services from the robot require precise syntax to work properly, this includes all of the places, objects, and questions tags that are previously predefined.
-– The output format: In this section, the specified format of the response is informed. The prompt tells the language model that the response has to be a continuous snippet of code written in python.
-– One example of desired output: An example of a real input and expected output is given, using the task module and the available entities.
-– The robot constraints: Some of the tasks are not possible to accomplish due to the robot’s current capabilities, these tasks have to be handled by the model, by specifying why the robot can’t accomplish the task instead of trying and failing. 
-– The input task: Finally, the task that the model has to solve utilizing the rest of the knowledge.
+* The goal of the model: This includes the specification of the main purpose of the model and the role it performs in the whole robot architecture.
+* The available functions from the task module: These functions belong to the codebase interface and call services from the Robot, the syntax of the functions, the parameters, and outputs were included in this section.
+* The available defined entities and tags: This is important because many services from the robot require precise syntax to work properly, this includes all of the places, objects, and questions tags that are previously predefined.
+* The output format: In this section, the specified format of the response is informed. The prompt tells the language model that the response has to be a continuous snippet of code written in python.
+* One example of desired output: An example of a real input and expected output is given, using the task module and the available entities.
+* The robot constraints: Some of the tasks are not possible to accomplish due to the robot’s current capabilities, these tasks have to be handled by the model, by specifying why the robot can’t accomplish the task instead of trying and failing. 
+* The input task: Finally, the task that the model has to solve utilizing the rest of the knowledge.
 
 ![Long String Prompting](https://github.com/PepperGPSR/PepperGPSR/assets/62764177/83d111fe-ca54-4e30-9e02-9913e6dd5099)
 
